@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
+  <parameter name="URL" value="https://mail.google.com"/>
+  <parameter name="Browser" value="Chrome"/>
+  <test name="FirefoxTest(failed)(failed)">
+    <parameter name="URL" value="https://mail.google.com"/>
+    <parameter name="Browser" value="Firefox"/>
+    <classes>
+      <class name="DataProvider.DataProviderWithTest_002">
+        <methods>
+          <include name="gmailLogin" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- DataProvider.DataProviderWithTest_002 -->
+    </classes>
+  </test> <!-- FirefoxTest(failed)(failed) -->
+  <test name="Chrometest(failed)(failed)">
+    <parameter name="URL" value="https://mail.google.com"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="DataProvider.DataProviderWithTest_002">
+        <methods>
+          <include name="gmailLogin" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- DataProvider.DataProviderWithTest_002 -->
+    </classes>
+  </test> <!-- Chrometest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

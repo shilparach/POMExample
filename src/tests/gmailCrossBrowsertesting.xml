@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Here parallel is an attribute which specify the mode of execution and thread-count specify how many browser should open -->
+<suite name="Suite">
+ 
+<test name="FirefoxTest">
+ 
+<parameter name="Browser" value="Firefox" />
+<parameter name="URL" value="https://mail.google.com" />
+
+	<classes>
+ 
+		<class name="DataProvider.DataProviderWithTest_002"/>
+ 
+	</classes>
+ 
+</test>
+ 
+<test name="Chrometest">
+ 
+<parameter name="Browser" value="Chrome" />
+<parameter name="URL" value="https://mail.google.com" />
+
+ 
+	<classes>
+ 
+		<class name="DataProvider.DataProviderWithTest_002"/>
+ 
+	</classes>
+ 
+</test>
+ 
+ <!-- <test name="IEtest">
+ 
+<parameter name="Browser" value="IE" />
+<parameter name="URL" value="https://mail.google.com" />
+
+ 
+	<classes>
+ 
+		<class name="DataProvider.DataProviderWithTest_002"/>
+ 
+	</classes>
+ 
+</test> -->
+</suite>
